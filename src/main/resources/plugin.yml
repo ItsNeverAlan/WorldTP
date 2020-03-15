@@ -6,3 +6,8 @@ commands:
   worldtp:
     aliases: [wtp]
     description: The command to teleport to each worlds
+    permission: worldtp.admin
+permissions:
+  worldtp.admin:
+    default: op
+    description: The permission to use worldtp

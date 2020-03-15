@@ -19,6 +19,12 @@ public final class WorldTP extends JavaPlugin {
                 .setExecutor(new CommandExecutor() {
                     @Override
                     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+
+                        if (!sender.hasPermission("worldtp.admin")) {
+                            sender.sendMessage(ChatColor.RED + "You have no permission!");
+                            return true;
+                        }
+
                         if (sender instanceof Player) {
                             if (args.length > 0) {
                                 if (args[0].equalsIgnoreCase("list")) {
