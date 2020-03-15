@@ -1,0 +1,8 @@
+name: WorldTP
+version: ${project.version}
+main: org.imanity.worldtp.WorldTP
+authors: [LeeGod]
+commands:
+  worldtp:
+    aliases: [wtp]
+    description: The command to teleport to each worlds
